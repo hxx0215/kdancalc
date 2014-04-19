@@ -62,8 +62,6 @@
 
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
-    
-    
 
 	UIInterfaceOrientation tToInterfaceO = [UIApplication sharedApplication].statusBarOrientation;
 	[self updateCurInterface:tToInterfaceO];
