@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[kdanInfoViewController buttonClicked_rotate:]:kdanInfoViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "tToInterfaceO">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
