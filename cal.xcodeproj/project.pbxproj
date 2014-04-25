@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B955931418FE7652002FBCA9 /* kdanInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B955931318FE7652002FBCA9 /* kdanInfoViewController.m */; };
 		B98EEA1118FE240300C794A7 /* kdanCalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98EEA1018FE240300C794A7 /* kdanCalViewController.m */; };
+		B9B0BD921906A8140048A5A0 /* Locaziable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9B0BD941906A8140048A5A0 /* Locaziable.strings */; };
 		B9BA136818FE1F4900DAE488 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BA136718FE1F4900DAE488 /* Foundation.framework */; };
 		B9BA136A18FE1F4900DAE488 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BA136918FE1F4900DAE488 /* CoreGraphics.framework */; };
 		B9BA136C18FE1F4900DAE488 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BA136B18FE1F4900DAE488 /* UIKit.framework */; };
@@ -39,6 +40,10 @@
 		B955931318FE7652002FBCA9 /* kdanInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kdanInfoViewController.m; sourceTree = "<group>"; };
 		B98EEA0F18FE240300C794A7 /* kdanCalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kdanCalViewController.h; sourceTree = "<group>"; };
 		B98EEA1018FE240300C794A7 /* kdanCalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kdanCalViewController.m; sourceTree = "<group>"; };
+		B9B0BD881906A0320048A5A0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		B9B0BD891906A0320048A5A0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		B9B0BD931906A8140048A5A0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Locaziable.strings"; sourceTree = "<group>"; };
+		B9B0BD951906A8180048A5A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Locaziable.strings; sourceTree = "<group>"; };
 		B9BA136418FE1F4900DAE488 /* cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9BA136718FE1F4900DAE488 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B9BA136918FE1F4900DAE488 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -133,6 +138,7 @@
 		B9BA136E18FE1F4900DAE488 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B9B0BD941906A8140048A5A0 /* Locaziable.strings */,
 				B9BA136F18FE1F4900DAE488 /* cal-Info.plist */,
 				B9BA137018FE1F4900DAE488 /* InfoPlist.strings */,
 				B9BA137318FE1F4900DAE488 /* main.m */,
@@ -218,6 +224,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 			);
 			mainGroup = B9BA135B18FE1F4900DAE488;
 			productRefGroup = B9BA136518FE1F4900DAE488 /* Products */;
@@ -236,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9BA137218FE1F4900DAE488 /* InfoPlist.strings in Resources */,
+				B9B0BD921906A8140048A5A0 /* Locaziable.strings in Resources */,
 				B9BA137A18FE1F4900DAE488 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,10 +290,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B9B0BD941906A8140048A5A0 /* Locaziable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9B0BD931906A8140048A5A0 /* zh-Hans */,
+				B9B0BD951906A8180048A5A0 /* en */,
+			);
+			name = Locaziable.strings;
+			sourceTree = "<group>";
+		};
 		B9BA137018FE1F4900DAE488 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B9BA137118FE1F4900DAE488 /* en */,
+				B9B0BD881906A0320048A5A0 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -294,6 +312,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B9BA138A18FE1F4900DAE488 /* en */,
+				B9B0BD891906A0320048A5A0 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

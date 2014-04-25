@@ -29,13 +29,13 @@
 	[super loadView];
 
 	[self.view setBackgroundColor:[UIColor whiteColor]];
-	self.infoLabel = [[UILabel alloc] init];
+	self.infoLabel = [[[UILabel alloc] init] autorelease];
 	[self.infoLabel setTextAlignment:NSTextAlignmentCenter];
-	self.infoLabel.text = @"开启横屏";
+	self.infoLabel.text =NSLocalizedStringFromTable(@"rotateAvailable",@"Locaziable", nil);
 	[self.view addSubview:self.infoLabel];
 
-	self.title = @"公司信息";
-	self.rotateAvailableButton = [[[UISwitch alloc] initWithFrame:CGRectMake(100, 100, 20, 20)] autorelease];
+	self.title = NSLocalizedStringFromTable(@"comInfo",@"Locaziable",nil);
+	self.rotateAvailableButton = [[[UISwitch alloc] init] autorelease];
 
 	[self.rotateAvailableButton setOn:[self rotateValueFromUserDefault]];
 	[self.rotateAvailableButton addTarget:self action:@selector(buttonClicked_rotate:) forControlEvents:UIControlEventValueChanged];
@@ -44,8 +44,8 @@
 
 - (void)updateCurInterface:(UIInterfaceOrientation)toInterfaceOrientation {
 
-    self.infoLabel.frame = CGRectMake(20, 90, 70, 50);
-	self.rotateAvailableButton.frame = CGRectMake(100, 100, 20, 20);
+    self.infoLabel.frame = CGRectMake(20, 90, 200, 50);
+	self.rotateAvailableButton.frame = CGRectMake(230, 100, 20, 20);
 }
 
 - (void)viewDidLoad {
@@ -58,6 +58,9 @@
 	[super viewWillAppear:animated];
 
 	[self.navigationController setNavigationBarHidden:NO animated:YES];
+    
+    UIInterfaceOrientation tToInterfaceO = [UIApplication sharedApplication].statusBarOrientation;
+	[self updateCurInterface:tToInterfaceO];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

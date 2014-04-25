@@ -22,7 +22,7 @@
 	self.window.backgroundColor = [UIColor whiteColor];
 	//self.viewController = [[kdanCalViewController alloc]initWithNibName:nil bundle:nil];
 	self.viewController = [[[kdanCalViewController alloc] init] autorelease];
-	self.navController = [[KDNavigationController alloc] initWithRootViewController:self.viewController];
+	self.navController = [[[KDNavigationController alloc] initWithRootViewController:self.viewController] autorelease];
 
 	self.window.rootViewController = self.navController;
 	[self.window makeKeyAndVisible];

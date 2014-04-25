@@ -30,10 +30,10 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.num1 = [[NSMutableString alloc] init];
-		self.num2 = [[NSMutableString alloc] init];
-		self.opt = [[NSString alloc] init];
-		self.buttons = [[NSMutableArray alloc] init];
+		self.num1 = [[[NSMutableString alloc] init] autorelease];
+		self.num2 = [[[NSMutableString alloc] init] autorelease];
+		self.opt = [[[NSString alloc] init] autorelease];
+		self.buttons = [[[NSMutableArray alloc] init] autorelease];
 	}
 	return self;
 }
@@ -143,7 +143,7 @@
 
 #pragma mark - display method
 - (void)initDisplay {
-	self.display = [[UILabel alloc] init];
+	self.display = [[[UILabel alloc] init] autorelease];
 	[self.display setTextAlignment:NSTextAlignmentRight];
 	self.display.text = @"0";
 	[self.view addSubview:self.display];
